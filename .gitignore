@@ -1,0 +1,110 @@
+# -----------------
+# Node
+# -----------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# -----------------
+# Env files
+# -----------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Payload / Next / React env variations
+.env.*
+!.env.example
+
+# -----------------
+# Build outputs
+# -----------------
+dist/
+build/
+.next/
+out/
+coverage/
+
+# -----------------
+# Logs
+# -----------------
+logs
+*.log
+
+# -----------------
+# MacOS
+# -----------------
+.DS_Store
+
+# -----------------
+# VSCode
+# -----------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# -----------------
+# OS files
+# -----------------
+Thumbs.db
+
+# -----------------
+# TypeScript
+# -----------------
+*.tsbuildinfo
+
+# -----------------
+# Turbo / Next / Monorepo
+# -----------------
+.turbo/
+.cache/
+
+# -----------------
+# Parcel / Vite / Webpack
+# -----------------
+.cache-loader/
+.parcel-cache/
+.vite/
+
+# -----------------
+# Firebase
+# -----------------
+.firebase/
+firebase-debug.log
+
+# -----------------
+# Vercel
+# -----------------
+.vercel
+
+# -----------------
+# Payload CMS
+# -----------------
+.payload/
+uploads/
+media/
+
+# -----------------
+# Local databases
+# -----------------
+*.sqlite
+*.db
+
+# -----------------
+# Testing
+# -----------------
+playwright-report/
+test-results/
+
+# -----------------
+# Misc
+# -----------------
+*.swp
+*.swo
