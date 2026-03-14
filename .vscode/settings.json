@@ -1,0 +1,89 @@
+{
+  // -----------------------------
+  // Editor & File Behavior
+  // -----------------------------
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true
+  },
+  "files.autoSave": "onFocusChange",
+
+  // -----------------------------
+  // CSS / Tailwind
+  // -----------------------------
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["tw`([^`]*)`", 1],
+    ["clsx\\(([^)]*)\\)", 1]
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // -----------------------------
+  // Prettier & Formatting
+  // -----------------------------
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  "prettier.printWidth": 100,
+
+  // -----------------------------
+  // ESLint / TypeScript
+  // -----------------------------
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "js/ts.tsdk.path": "./node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  "js/ts.preferences.importModuleSpecifier": "relative",
+
+  // -----------------------------
+  // Terminal (macOS)
+  // -----------------------------
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  // -----------------------------
+  // Git / Source Control
+  // -----------------------------
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  // -----------------------------
+  // Breadcrumbs & Navigation
+  // -----------------------------
+  "breadcrumbs.enabled": true,
+  "explorer.compactFolders": false,
+  
+  // -----------------------------
+  // VS Code IntelliSense
+  // -----------------------------
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabCompletion": "on"
+}
