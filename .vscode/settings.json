@@ -15,7 +15,7 @@
     "**/.next": true,
     "**/dist": true
   },
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "off",
 
   // -----------------------------
   // CSS / Tailwind
