@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
-import { GeistMono, GeistSans, LatoFont, NotoSans } from "./fonts";
-import Header from "@/components/header/header";
-import { cn } from "@/lib/utils";
+import { GeistMono, GeistSans, LatoFont, NotoSans } from "@/app/fonts";
 import { getServerSideURL } from "@/lib/getUrl";
 import { mergeOpenGraph } from "@/lib/mergeOpenGraph";
-import Footer from "@/components/footer/footer";
+import { cn } from "@/lib/utils";
+import "/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
@@ -34,9 +32,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

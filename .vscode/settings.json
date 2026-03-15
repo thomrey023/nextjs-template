@@ -3,6 +3,8 @@
   // Editor & File Behavior
   // -----------------------------
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.codeActionsOnSave": {
@@ -14,12 +16,6 @@
     "**/dist": true
   },
   "files.autoSave": "onFocusChange",
-
-  // -----------------------------
-  // Auto-fix indentation on save
-  // -----------------------------
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
 
   // -----------------------------
   // CSS / Tailwind
@@ -43,11 +39,20 @@
   "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
+  // "prettier.tabWidth": 2,
+  // "prettier.useTabs": false,
+  // "prettier.bracketSameLine": false,
   "prettier.printWidth": 100,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
