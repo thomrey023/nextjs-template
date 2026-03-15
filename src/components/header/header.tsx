@@ -1,11 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-import HeaderContent from "@/components/header/subcomponent/header-content";
+import HeaderContent from '@/components/header/subcomponent/header-content';
 
 const Header = () => {
   return (
-    <header className="header-class min-h-[74px]">
+    <header className="header-class min-h-18.5">
       <div className="row-flex px-constant w-full justify-between items-center">
         <Link href={`/`}>
           <Image

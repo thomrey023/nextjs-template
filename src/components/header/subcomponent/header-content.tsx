@@ -1,20 +1,14 @@
-"use client";
+'use client';
 
-import { MenuIcon } from "lucide-react";
-import Image from "next/image";
-import { useState } from "react";
+import { MenuIcon } from 'lucide-react';
+import Image from 'next/image';
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { Typography } from "@/components/ui/typography";
-import { useRouter } from "next/navigation";
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Typography } from '@/components/ui/typography';
+import { useRouter } from 'next/navigation';
 
 const HeaderContent = () => {
   const router = useRouter();
@@ -28,26 +22,20 @@ const HeaderContent = () => {
   return (
     <>
       {/* // * * Small - Large screen header content */}
-      <div className="hidden sm:flex flex-row items-center gap-x-[16px]">
+      <div className="hidden sm:flex flex-row items-center gap-x-4">
         <Button
           variant="outline"
           className="outline-button-class"
-          onClick={() => handleRouteChange("contact")}
+          onClick={() => handleRouteChange('contact')}
         >
-          <Typography
-            className="font-medium leading-6 text-[16px]"
-            text="Contact"
-          />
+          <Typography className="font-medium leading-6 text-[16px]" text="Contact" />
         </Button>
         <Button
           variant="outline"
           className="outline-button-class"
-          onClick={() => handleRouteChange("faq")}
+          onClick={() => handleRouteChange('faq')}
         >
-          <Typography
-            className="font-medium leading-6 text-[16px]"
-            text="FAQ"
-          />
+          <Typography className="font-medium leading-6 text-[16px]" text="FAQ" />
         </Button>
       </div>
 
@@ -55,11 +43,11 @@ const HeaderContent = () => {
       <div className="sm:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <button className="w-[40px] h-[40px] bg-pale-gray p-[8px] rounded-full">
-              <MenuIcon className="w-[24px] h-[24px] text-charcoal shrink-0" />
+            <button className="w-10 h-10 bg-pale-gray p-2 rounded-full">
+              <MenuIcon className="w-6 h-6 text-charcoal shrink-0" />
             </button>
           </SheetTrigger>
-          <SheetContent side="top" className="w-full min-h-[375px]">
+          <SheetContent side="top" className="w-full min-h-93.75">
             <SheetHeader>
               <SheetTitle className="sr-only">nav menu</SheetTitle>
               <Image
@@ -73,28 +61,22 @@ const HeaderContent = () => {
                 priority
               />
             </SheetHeader>
-            <div className="col-flex gap-y-[16px] px-[16px]">
-              <Separator className="w-full h-[1px] bg-[#E5E5E5]" />
+            <div className="col-flex gap-y-4 px-4">
+              <Separator className="w-full h-px bg-[#E5E5E5]" />
               <Button
                 variant="outline"
                 className="outline-button-class w-full"
-                onClick={() => handleRouteChange("contact")}
+                onClick={() => handleRouteChange('contact')}
               >
-                <Typography
-                  className="font-medium leading-6 text-[16px]"
-                  text="Contact"
-                />
+                <Typography className="font-medium leading-6 text-[16px]" text="Contact" />
               </Button>
 
               <Button
                 variant="outline"
                 className="outline-button-class w-full"
-                onClick={() => handleRouteChange("faq")}
+                onClick={() => handleRouteChange('faq')}
               >
-                <Typography
-                  className="font-medium leading-6 text-[16px]"
-                  text="FAQ"
-                />
+                <Typography className="font-medium leading-6 text-[16px]" text="FAQ" />
               </Button>
             </div>
           </SheetContent>
