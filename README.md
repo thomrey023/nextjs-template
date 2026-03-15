@@ -11,4 +11,18 @@ pnpm install
 
 Warning: This project template will be using pnpm as the package manager. If you want to use something else, please handle accordingly.
 
+## Remove VSCODE settings in actual project
+
+To remove VSCODE settings from repo and no longer track it, just follow these steps:
+
+1. Type this in first in console to remove vscode folder from repo and stop tracking it in git
+
+```bash
+git rm -r --cached .vscode
+```
+
+2. Push changes
+3. Update .gitignore and add .vscode/
+4. Push changes
+
 ## TODO: erase README text in actual project
