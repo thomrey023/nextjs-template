@@ -21,8 +21,7 @@ To remove VSCODE settings from repo and no longer track it, just follow these st
 git rm -r --cached .vscode
 ```
 
-2. Push changes
-3. Update .gitignore and add .vscode/
-4. Push changes
+2. Update .gitignore and add .vscode/
+3. Push changes
 
 ## TODO: erase README text in actual project
