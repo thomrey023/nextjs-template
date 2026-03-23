@@ -3,7 +3,7 @@
   // Editor & File Behavior
   // -----------------------------
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnType": true,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
