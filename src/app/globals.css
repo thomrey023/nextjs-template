@@ -163,9 +163,9 @@
   }
 
   .outline-button-class {
-    @apply bg-transparent border border-zinc-300 rounded-[14px] h-[44px]
+    @apply bg-transparent border border-zinc-300 rounded-[14px] h-11
   }
   .outline-button-class:hover {
-    @apply border-[#2463EB] !bg-[#E3EEFF] !text-[#2463EB]
+    @apply border-[#2463EB] bg-[#E3EEFF]! text-[#2463EB]!
   }
 }
