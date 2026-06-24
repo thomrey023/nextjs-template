@@ -33,7 +33,7 @@ const HeaderContent = () => {
       <div className="hidden flex-row items-center gap-x-4 sm:flex">
         <Button
           variant="outline"
-          className="outline-button-class"
+          className="outline-button-class cursor-pointer"
           onClick={() => handleRouteChange('contact')}
         >
           <Typography
@@ -43,7 +43,7 @@ const HeaderContent = () => {
         </Button>
         <Button
           variant="outline"
-          className="outline-button-class"
+          className="outline-button-class cursor-pointer"
           onClick={() => handleRouteChange('faq')}
         >
           <Typography

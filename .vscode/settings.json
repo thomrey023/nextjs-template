@@ -4,11 +4,12 @@
   // -----------------------------
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
-  "editor.formatOnType": true,
+  "editor.formatOnType": false,
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
+    "source.fixAll.eslint": "never"
   },
   "files.exclude": {
     "**/node_modules": true,
@@ -16,6 +17,11 @@
     "**/dist": true
   },
   "files.autoSave": "off",
+  "triggerTaskOnSave.on": true,
+  "triggerTaskOnSave.restart": true,
+  "triggerTaskOnSave.tasks": {
+    "Automated Code Format": ["src/**/*.ts", "src/**/*.tsx", "types/**/*.ts"]
+  },
 
   // -----------------------------
   // CSS / Tailwind
@@ -39,8 +45,8 @@
   "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
   "prettier.endOfLine": "lf",
-  // "prettier.tabWidth": 2,
-  // "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
   // "prettier.bracketSameLine": false,
   "prettier.printWidth": 100,
   "[javascript]": {
@@ -67,7 +73,7 @@
   ],
   "js/ts.tsdk.path": "./node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
-  "js/ts.preferences.importModuleSpecifier": "relative",
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
 
   // -----------------------------
   // Terminal (macOS)

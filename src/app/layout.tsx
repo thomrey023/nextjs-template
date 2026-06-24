@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
-import '@/app/(main)/globals.css';
 import { GeistMono, GeistSans, LatoFont, NotoSans } from '@/app/fonts';
+import '@/app/globals.css';
 import { getServerSideURL } from '@/lib/getUrl';
 import { mergeOpenGraph } from '@/lib/mergeOpenGraph';
 import { cn } from '@/lib/utils';
