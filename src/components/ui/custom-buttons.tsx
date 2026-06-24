@@ -1,8 +1,9 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Typography } from "@/components/ui/typography";
+import { cn } from '@/lib/utils';
+
+import { Button } from '@/components/ui/button';
+import { Typography } from '@/components/ui/typography';
 
 interface ButtonWithIconProps {
   className: string;
@@ -11,14 +12,14 @@ interface ButtonWithIconProps {
   disabled?: boolean;
   leadingIcon?: React.ReactNode;
   trailingIcon?: React.ReactNode;
-  type?: "button" | "reset" | "submit" | undefined;
+  type?: 'button' | 'reset' | 'submit' | undefined;
   variant?:
-    | "link"
-    | "default"
-    | "destructive"
-    | "outline"
-    | "secondary"
-    | "ghost"
+    | 'link'
+    | 'default'
+    | 'destructive'
+    | 'outline'
+    | 'secondary'
+    | 'ghost'
     | null
     | undefined;
   onClick?: () => void;
@@ -37,7 +38,7 @@ export const ButtonWithIcon = ({
 }: ButtonWithIconProps) => {
   return (
     <Button
-      className={cn(className, "cursor-pointer")}
+      className={cn(className, 'cursor-pointer')}
       disabled={disabled}
       variant={variant}
       type={type}

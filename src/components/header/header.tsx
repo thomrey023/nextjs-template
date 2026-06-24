@@ -6,10 +6,10 @@ import HeaderContent from '@/components/header/subcomponent/header-content';
 const Header = () => {
   return (
     <header className="header-class min-h-18.5">
-      <div className="row-flex px-constant w-full justify-between items-center">
+      <div className="row-flex px-constant w-full items-center justify-between">
         <Link href={`/`}>
           <Image
-            className="object-cover shrink-0"
+            className="shrink-0 object-cover"
             src="/logos/nextjs-logo.svg"
             alt="Header logo"
             decoding="async"

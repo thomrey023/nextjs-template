@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -135,37 +135,37 @@
   }
 
   .header-class {
-    @apply w-full flex items-center justify-center overflow-x-hidden border border-b-gray-100
+    @apply flex w-full items-center justify-center overflow-x-hidden border border-b-gray-100;
   }
 
   .footer-class {
-    @apply w-full flex items-center justify-center bg-zinc-100
+    @apply flex w-full items-center justify-center bg-zinc-100;
   }
 
   .regular-page-section {
-    @apply w-full flex px-[4%] sm:px-[5%] lg:px-[8%] xl:px-[10%]
+    @apply flex w-full px-[4%] sm:px-[5%] lg:px-[8%] xl:px-[10%];
   }
 
   .absolute-center {
-    @apply absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
   }
 
   .col-flex {
-    @apply flex flex-col
+    @apply flex flex-col;
   }
 
   .row-flex {
-    @apply flex flex-row
+    @apply flex flex-row;
   }
 
   .px-constant {
-    @apply px-[4%] sm:px-[5%] lg:px-[8%] xl:px-[10%]
+    @apply px-[4%] sm:px-[5%] lg:px-[8%] xl:px-[10%];
   }
 
   .outline-button-class {
-    @apply bg-transparent border border-zinc-300 rounded-[14px] h-11
+    @apply h-11 rounded-[14px] border border-zinc-300 bg-transparent;
   }
   .outline-button-class:hover {
-    @apply border-[#2463EB] bg-[#E3EEFF]! text-[#2463EB]!
+    @apply border-[#2463EB] bg-[#E3EEFF]! text-[#2463EB]!;
   }
 }

@@ -1,5 +1,6 @@
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import Link from 'next/link';
+
+import { cn } from '@/lib/utils';
 
 interface TypographyProps {
   text: string;
@@ -7,7 +8,7 @@ interface TypographyProps {
 }
 
 export const Typography = ({ text, className }: TypographyProps) => {
-  return <p className={cn("font-sans", className)}>{text}</p>;
+  return <p className={cn('font-sans', className)}>{text}</p>;
 };
 
 interface SpanTypographyProps {

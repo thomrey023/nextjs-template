@@ -3,8 +3,19 @@
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "all",
-  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
-  "importOrder": ["^react", "^next", "<THIRD_PARTY_MODULES>", "^@/components/(.*)$", "^@/hooks/(.*)$", "^@/types/(.*)$", "^[./]"],
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "importOrder": [
+    "^react",
+    "^next",
+    "<THIRD_PARTY_MODULES>",
+    "^@/components/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/types/(.*)$",
+    "^[./]"
+  ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
 }

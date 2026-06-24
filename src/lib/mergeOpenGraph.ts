@@ -15,7 +15,9 @@ const defaultOpenGraph: Metadata['openGraph'] = {
   title: 'ProjectName', // TODO: change title
 };
 
-export const mergeOpenGraph = (og?: Metadata['openGraph']): Metadata['openGraph'] => {
+export const mergeOpenGraph = (
+  og?: Metadata['openGraph'],
+): Metadata['openGraph'] => {
   return {
     ...defaultOpenGraph,
     ...og,

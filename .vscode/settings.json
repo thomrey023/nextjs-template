@@ -91,7 +91,7 @@
   // -----------------------------
   "breadcrumbs.enabled": true,
   "explorer.compactFolders": false,
-  
+
   // -----------------------------
   // VS Code IntelliSense
   // -----------------------------
@@ -120,7 +120,7 @@
   // To be disabled this coloring set this to an empty string.
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
   // Example of regular expression in JSON (note double backslash to escape characters)
-  "indentRainbow.ignoreLinePatterns" : [
+  "indentRainbow.ignoreLinePatterns": [
     "/[ \t]* [*]/g", // lines begining with <whitespace><space>*
     "/[ \t]+[/]{2}/g" // lines begininning with <whitespace>//
   ]

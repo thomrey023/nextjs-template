@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Typography } from '@/components/ui/typography';
 import { cn } from '@/lib/utils';
+
+import { Typography } from '@/components/ui/typography';
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
       >
         <Link href="/">
           <Image
-            className="object-cover shrink-0"
+            className="shrink-0 object-cover"
             src="/logos/nextjs-logo.svg"
             alt="Header logo"
             decoding="async"
@@ -28,8 +29,8 @@ const Footer = () => {
 
         <div
           className={cn(
-            'col-flex items-start w-fit',
-            'lg:flex-row lg:items-center lg:justify-between lg:w-full lg:max-w-107.5',
+            'col-flex w-fit items-start',
+            'lg:w-full lg:max-w-107.5 lg:flex-row lg:items-center lg:justify-between',
           )}
         >
           <Link href="/terms-and-conditions">
@@ -39,13 +40,22 @@ const Footer = () => {
             />
           </Link>
           <Link href="privacy-policy">
-            <Typography className="text-[14px] leading-5 text-zinc-700" text="Privacy policy" />
+            <Typography
+              className="text-[14px] leading-5 text-zinc-700"
+              text="Privacy policy"
+            />
           </Link>
           <Link href="faq">
-            <Typography className="text-[14px] leading-5 text-zinc-700" text="FAQs" />
+            <Typography
+              className="text-[14px] leading-5 text-zinc-700"
+              text="FAQs"
+            />
           </Link>
           <Link href="contact">
-            <Typography className="text-[14px] leading-5 text-zinc-700" text="Contact us" />
+            <Typography
+              className="text-[14px] leading-5 text-zinc-700"
+              text="Contact us"
+            />
           </Link>
         </div>
       </div>

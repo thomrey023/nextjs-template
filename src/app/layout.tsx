@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
-import { GeistMono, GeistSans, LatoFont, NotoSans } from "@/app/fonts";
-import { getServerSideURL } from "@/lib/getUrl";
-import { mergeOpenGraph } from "@/lib/mergeOpenGraph";
-import { cn } from "@/lib/utils";
-import "/globals.css";
+import '@/app/(main)/globals.css';
+import { GeistMono, GeistSans, LatoFont, NotoSans } from '@/app/fonts';
+import { getServerSideURL } from '@/lib/getUrl';
+import { mergeOpenGraph } from '@/lib/mergeOpenGraph';
+import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
   openGraph: mergeOpenGraph(),
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
   },
 };
 
@@ -26,14 +26,12 @@ export default function RootLayout({
         LatoFont.variable,
         GeistSans.variable,
         GeistMono.variable,
-        "scroll-smooth",
+        'scroll-smooth',
       )}
       lang="en"
       suppressHydrationWarning
     >
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

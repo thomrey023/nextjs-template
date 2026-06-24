@@ -1,16 +1,30 @@
-import { CalendarDays } from 'lucide-react';
 import { Matcher } from 'react-day-picker';
 import { Control, Controller, FieldPath, FieldValues } from 'react-hook-form';
 import 'react-phone-number-input/style.css';
 
+import { cn } from '@/lib/utils';
+import { CalendarDays } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
-import { Field, FieldDescription, FieldError, FieldLabel } from '@/components/ui/field';
+import {
+  Field,
+  FieldDescription,
+  FieldError,
+  FieldLabel,
+} from '@/components/ui/field';
 import { Input } from '@/components/ui/input';
-import { InputGroup, InputGroupAddon, InputGroupInput } from '@/components/ui/input-group';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput,
+} from '@/components/ui/input-group';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
 import { Textarea } from '@/components/ui/textarea';
-import { cn } from '@/lib/utils';
 
 interface FieldControlInputProps<T extends FieldValues> {
   control: Control<T>;
@@ -40,17 +54,26 @@ export const FieldControlInput = <T extends FieldValues>({
       name={name}
       control={control}
       render={({ field, fieldState }) => (
-        <Field className="w-full relative" data-invalid={fieldState.invalid}>
+        <Field className="relative w-full" data-invalid={fieldState.invalid}>
           {label && label.length > 0 && (
             <FieldLabel className={fieldLabelClassName}>{label}</FieldLabel>
           )}
           {description && description.length > 0 && (
-            <FieldDescription className={fieldDescriptionClassName}>{description}</FieldDescription>
+            <FieldDescription className={fieldDescriptionClassName}>
+              {description}
+            </FieldDescription>
           )}
 
-          <Input className={inputClassName} placeholder={placeholder} {...field} />
+          <Input
+            className={inputClassName}
+            placeholder={placeholder}
+            {...field}
+          />
           {fieldState.invalid && (
-            <FieldError errors={[fieldState.error]} className={fieldErrorClassName} />
+            <FieldError
+              errors={[fieldState.error]}
+              className={fieldErrorClassName}
+            />
           )}
         </Field>
       )}
@@ -75,8 +98,19 @@ interface FieldControlCalendarProps<T extends FieldValues> {
   disabled?: Matcher | Matcher[] | undefined;
   toggleCalendar: (index: number, type: 'dob' | 'passport') => void;
   calendarType?: 'dob' | 'passport' | undefined;
-  align?: 'inline-start' | 'inline-end' | 'block-start' | 'block-end' | null | undefined;
-  captionLayout?: 'label' | 'dropdown' | 'dropdown-months' | 'dropdown-years' | undefined;
+  align?:
+    | 'inline-start'
+    | 'inline-end'
+    | 'block-start'
+    | 'block-end'
+    | null
+    | undefined;
+  captionLayout?:
+    | 'label'
+    | 'dropdown'
+    | 'dropdown-months'
+    | 'dropdown-years'
+    | undefined;
 }
 
 export const FieldControlCalendar = <T extends FieldValues>({
@@ -109,7 +143,9 @@ export const FieldControlCalendar = <T extends FieldValues>({
             <FieldLabel className={fieldLabelClassName}>{label}</FieldLabel>
           )}
           {description && description.length > 0 && (
-            <FieldDescription className={fieldDescriptionClassName}>{description}</FieldDescription>
+            <FieldDescription className={fieldDescriptionClassName}>
+              {description}
+            </FieldDescription>
           )}
           <InputGroup className={inputGroupClassName}>
             <InputGroupInput
@@ -130,8 +166,11 @@ export const FieldControlCalendar = <T extends FieldValues>({
                 }}
               >
                 <PopoverTrigger asChild>
-                  <Button variant="ghost" className="hover:bg-transparent cursor-pointer">
-                    <CalendarDays className="w-6! h-6.75! shrink-0 text-[#18181B]" />
+                  <Button
+                    variant="ghost"
+                    className="cursor-pointer hover:bg-transparent"
+                  >
+                    <CalendarDays className="h-6.75! w-6! shrink-0 text-[#18181B]" />
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent>
@@ -145,7 +184,10 @@ export const FieldControlCalendar = <T extends FieldValues>({
                     onSelect={(date) => {
                       if (!date) return;
                       const year = date.getFullYear();
-                      const month = String(date.getMonth() + 1).padStart(2, '0');
+                      const month = String(date.getMonth() + 1).padStart(
+                        2,
+                        '0',
+                      );
                       const day = String(date.getDate()).padStart(2, '0');
                       field.onChange(`${month}/${day}/${year}`);
 
@@ -194,17 +236,27 @@ export const FieldControlTextarea = <T extends FieldValues>({
       name={name}
       control={control}
       render={({ field, fieldState }) => (
-        <Field className="w-full relative" data-invalid={fieldState.invalid}>
+        <Field className="relative w-full" data-invalid={fieldState.invalid}>
           {label && label.length > 0 && (
             <FieldLabel className={fieldLabelClassName}>{label}</FieldLabel>
           )}
           {description && description.length > 0 && (
-            <FieldDescription className={fieldDescriptionClassName}>{description}</FieldDescription>
+            <FieldDescription className={fieldDescriptionClassName}>
+              {description}
+            </FieldDescription>
           )}
 
-          <Textarea className={inputClassName} placeholder={placeholder} rows={5} {...field} />
+          <Textarea
+            className={inputClassName}
+            placeholder={placeholder}
+            rows={5}
+            {...field}
+          />
           {fieldState.invalid && (
-            <FieldError errors={[fieldState.error]} className={fieldErrorClassName} />
+            <FieldError
+              errors={[fieldState.error]}
+              className={fieldErrorClassName}
+            />
           )}
         </Field>
       )}

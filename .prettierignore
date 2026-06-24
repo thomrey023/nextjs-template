@@ -1,0 +1,16 @@
+# Ignore build output structures
+.next/
+**/ .next/**
+out/
+build/
+
+# Ignore auto-generated environment types
+next-env.d.ts
+cache-life.d.ts
+routes.d.ts
+
+# Ignore package manager lockfiles
+pnpm-lock.yaml
+pnpm-workspace.yaml
+package-lock.json
+yarn.lock
