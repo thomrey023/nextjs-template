@@ -8,6 +8,8 @@ build/
 next-env.d.ts
 cache-life.d.ts
 routes.d.ts
+types/validator.ts
+**/types/validator.ts
 
 # Ignore package manager lockfiles
 pnpm-lock.yaml
