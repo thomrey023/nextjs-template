@@ -20,6 +20,18 @@ A highly scalable, production-grade Next.js template engineered for performance,
 
 ## 🛠️ Getting Started
 
+## 🔌 Recommended VS Code Extensions
+
+To ensure unified code quality, formatting safety, and an optimal development workflow, it is highly recommended to install the following workspace extensions:
+
+- 📝 **[Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** — Enforces unified style and automated import/Tailwind class sorting.
+- 🔍 **[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)** — Automated static analysis to catch syntax bugs and enforce strict code standards.
+- 🎨 **[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)** — Advanced autocompletion, class linting, and hover previews for Tailwind v4.
+- ⚙️ **[Trigger Task on Save](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.triggertaskonsave)** — Automates compilation format hooks seamlessly on file save loops.
+- 🌈 **[Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)** — Color-coded column indentations to ensure strict layout scannability.
+- 💬 **[Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)** — Categorizes workspace tracking annotations into human-readable alerts (`TODO`, `FIXME`).
+- 📁 **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=pkief.material-icon-theme)** — Production-grade file and directory icons for rapid navigation boundaries.
+
 ### 1. Installation
 
 Clone the repository and install the dependencies using `pnpm`:
