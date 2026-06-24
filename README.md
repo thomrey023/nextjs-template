@@ -1,27 +1,45 @@
-This is a [Next.js](https://nextjs.org) project template.
+# Enterprise-Ready Next.js 15 Boilerplate & Architecture Template
 
-## Getting Started
+A highly scalable, production-grade Next.js template engineered for performance, type safety, and clean separation of concerns. This boilerplate is designed to skip the initial setup friction and establish industry-standard architectural patterns from day one.
 
-First, run this in console to install necessary packages in the template:
-(Double check package.json first to see which packages will be installed so you can add/remove packages)
+## 🚀 Key Architectural Features
+
+- **Strict Type Safety**: Written 100% in TypeScript with robust module and API declaration boundaries.
+- **Modern Monorepo/Workspace Ready**: Configured with `pnpm` workspaces for optimal dependency management and caching.
+- **Component-Driven Architecture**: Integrated with `components.json` for modular, atomic UI design (Shadcn/ui & Tailwind CSS).
+- **Linter & Code Quality**: Pre-configured with modular ESLint Flat Config (`eslint.config.mjs`) to enforce clean, predictable code patterns.
+- **Optimized VSCode Workflow**: Includes targeted workspace configurations to align team formatting rules seamlessly.
+
+## 📦 Tech Stack & Tools
+
+- **Framework**: Next.js (App Router optimized)
+- **Language**: TypeScript
+- **Package Manager**: `pnpm`
+- **Styling**: Tailwind CSS v4 via @tailwindcss/postcss pipeline
+- **Code Quality**: ESLint (Flat Config)
+
+## 🛠️ Getting Started
+
+### 1. Installation
+
+Clone the repository and install the dependencies using `pnpm`:
 
 ```bash
 pnpm install
 ```
 
-Warning: This project template will be using pnpm as the package manager. If you want to use something else, please handle accordingly.
+### 2. Development Server
 
-## Remove VSCODE settings in actual project
-
-To remove VSCODE settings from repo and no longer track it, just follow these steps:
-
-1. Type this in first in console to remove vscode folder from repo and stop tracking it in git
+Run the local development server:
 
 ```bash
-git rm -r --cached .vscode
+pnpm dev
 ```
 
-2. Update .gitignore and add .vscode/
-3. Push changes
+## 📐 Project Structure & Optimization
 
-## TODO: erase README text in actual project
+This template enforces a strict separation between presentation layers, business logic, and custom type wrappers:
+
+- `src/` - Houses the core application views, layouts, and hooks.
+- `types/` - Global, immutable TypeScript declarations to prevent type leaking across modules.
+- `.vscode/` - Optional pre-configured development rules for immediate onboarding.
