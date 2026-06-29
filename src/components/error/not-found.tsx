@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { Typography } from '@/components/ui/typography';
 
-const Error = () => {
+const NotFound = () => {
   return (
     <div className="bg-background flex min-h-screen flex-col items-center justify-center px-4 text-center">
       <div className="space-y-4">
@@ -32,4 +32,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default NotFound;
