@@ -106,11 +106,7 @@ interface FieldControlCalendarProps<T extends FieldValues> {
     | null
     | undefined;
   captionLayout?:
-    | 'label'
-    | 'dropdown'
-    | 'dropdown-months'
-    | 'dropdown-years'
-    | undefined;
+    'label' | 'dropdown' | 'dropdown-months' | 'dropdown-years' | undefined;
 }
 
 export const FieldControlCalendar = <T extends FieldValues>({
